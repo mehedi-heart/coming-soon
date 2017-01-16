@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+#coming-soon{
+position: relative;
+
+}
+#coming-soon > img{
+	    height: 100vh;
+    width: 100%;
+}
+#coming-soon:after{
+	position: absolute;
+	content: "";
+	top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(46, 60, 134, 0.77);
+    z-index: 0;
+}
+.coming-soon{
+	 position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    max-width: 400px;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translate(-50%,-50%);
+        text-align: center;
+}
+.coming-soon img{
+	max-width: 50%;
+	margin: 0 auto;
+}
+.coming-soon h1{
+	    margin: 0;
+    font-size: 52px;
+    padding-bottom: 12px;
+        letter-spacing: 0.3px;
+}
+.coming-soon p{
+	    margin: 0;
+    font-size: 15px;
+}
+.coming-soon a{
+	display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #187F74;
+    font-size: 14px;
+    border: 1px solid;
+    border-radius: 4px;
+        transition: all 0.4s ease;
+}
+.coming-soon a:hover{
+        background: #11ceb9;
+}
+.menu{
+	position: fixed;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    height: 100vh;
+    width: 7%;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+}
+ul.nav,ul.social{
+	    margin: 0;
+    padding: 0;
+}
+.menu li,.social li{
+	list-style: none;
+	    text-align: center;
+}
+.menu li a,.social li a{
+	display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.38);
+    transition: all 0.4s ease;
+}
+.menu li a i,.social li a i{
+	display: block;
+	margin-bottom: 3px;
+}
+.social{
+	position: fixed;
+    width: 6.9%;
+    bottom: 0;
+}
+.nav li:last-child a{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+}
+.menu li a:hover{
+	background: #11ceb9;
+}
+.social li a{
+	background-color: #293850;
+}
+ul.social li a:hover{
+	background: #11ceb9;
+}
+
